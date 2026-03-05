@@ -1,0 +1,90 @@
+Name: Gary Clary
+FSUID: gec22c
+Repository URL: https://github.com/kingclary02/assignment2
+
+Tutorial Completion Date: March 5, 2026
+GitHub Account Setup Date: March 2026
+
+
+1) Console output after pushing changes in step 3.C
+
+garyclaryjr@Garys-MacBook-Pro assignment2 % git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 568 bytes | 568.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:kingclary02/assignment2.git
+   d64d389..4bde52e  master -> master
+
+
+2) How many commits have been done to the repository (anyone)?
+
+Command used:
+git rev-list --count --all
+
+Answer:
+(PASTE THE NUMBER OUTPUT HERE)
+
+
+3) When was README.md modified last?
+
+Command used:
+git log -1 --format=%ci -- README.md
+
+Answer:
+(PASTE THE TIMESTAMP OUTPUT HERE)
+
+
+4) Mention two reasons why branches are used in a Git repository
+
+• To allow developers to work on new features without affecting the main branch.
+• To allow multiple developers to work on different parts of the project simultaneously.
+
+
+5) What is the difference between git log and git status?
+
+git log shows the commit history of the repository.
+
+git status shows the current state of the working directory and staging area.
+
+
+6) What command would you use to see the commits where “Vehicle.h” was one of the committed files?
+
+git log -- Vehicle.h
+
+
+7) What command would you use to see the commits whose commit message contains the word “file”?
+
+git log --grep="file"
+
+
+8) In the context of object-oriented programming
+
+Inheritance:
+Inheritance allows a class to acquire properties and behaviors from another class.
+
+Polymorphism:
+Polymorphism allows different objects to respond to the same method in different ways.
+
+Encapsulation:
+Encapsulation hides the internal details of a class and restricts direct access to its data.
+
+
+9) What is the main difference between the “Dictator and Lieutenants” workflow and the “Integration manager” workflow?
+
+In the Integration Manager workflow, a single maintainer reviews and merges contributions from developers into the main repository.
+
+In the Dictator and Lieutenants workflow, several trusted maintainers manage different subsystems of the project and integrate contributions before sending them to the main project leader.
+
+
+10) How would a team of 100 developers benefit from following the “Dictator and Lieutenants” workflow instead of the “Centralized” workflow?
+
+A large team benefits because responsibilities are distributed among several subsystem maintainers, which reduces bottlenecks and improves coordination compared to a centralized workflow where all changes go through a single integration point.
+
+git rev-list --count --all
+
+git log -1 --format=%ci -- README.md
+
